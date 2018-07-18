@@ -11,5 +11,6 @@ WORKDIR /app
 
 RUN apt-get install -y nodejs
 RUN npm install --global vue-cli
+RUN npm install axios --save
 
 EXPOSE 8080
