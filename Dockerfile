@@ -12,6 +12,7 @@ WORKDIR /app
 
 RUN apt-get install -y nodejs
 RUN npm install --global vue-cli firebase-tools
+RUN npm install axios --save
 
 RUN npm run build
 RUN firebase use ${FIREBASE_PROJECT} --token ${FIREBASE_TOKEN}
