@@ -10,12 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hoge',
+      // name: 'Hoge',
       component: Hoge
     },
     {
       path: '/scene2',
-      name: 'Scene2',
+      // name: 'Scene2',
       component: Scene2
     }
   ]
