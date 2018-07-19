@@ -23,10 +23,10 @@ export default {
   },
   methods: {
     Init: function () {
-        this.text = 'Vue.js App'
+      this.text = 'Vue.js App'
     },
-    output: function() {
-      axios.get('https://api.lesson-time.com')
+    output: function () {
+      axios.get(process.env.API_ENDPOINT)
         .then(response => {
           this.text = response.data
         })
