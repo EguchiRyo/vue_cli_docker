@@ -10,7 +10,7 @@ RUN mkdir /app
 COPY ./app /app
 WORKDIR /app
 
-RUN apt-get install -y nodejs
+RUN npm install
 RUN npm install --global vue-cli firebase-tools
 RUN npm install axios --save
 
