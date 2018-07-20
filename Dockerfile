@@ -10,9 +10,9 @@ RUN mkdir /app
 COPY ./app /app
 WORKDIR /app
 
+RUN rm -rf node_modules
 RUN npm install
 RUN npm install --global vue-cli firebase-tools
-RUN npm install axios --save
 
 RUN npm run build
 RUN firebase use ${FIREBASE_PROJECT} --token ${FIREBASE_TOKEN}

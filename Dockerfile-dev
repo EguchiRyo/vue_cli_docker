@@ -9,8 +9,8 @@ RUN mkdir /app
 COPY ./app /app
 WORKDIR /app
 
+RUN rm -rf node_modules
 RUN npm install
 RUN npm install --global vue-cli
-RUN npm install axios --save
 
 EXPOSE 8080
