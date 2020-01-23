@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Hoge from '@/components/Hoge'
 import Scene2 from '@/components/Scene2'
-import Login from '@/components/Login'
+import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
@@ -20,9 +20,9 @@ export default new Router({
       component: Scene2
     },
     {
-      path: '/login',
+      path: '/hello',
       // name: 'Scene2',
-      component: Login
+      component: HelloWorld
     }
   ]
 })

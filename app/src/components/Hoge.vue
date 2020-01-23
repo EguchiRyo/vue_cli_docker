@@ -14,7 +14,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'Hoge',
+  name: 'Login',
   data: function () {
     return {
       msg: '',
